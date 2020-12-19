@@ -1,0 +1,24 @@
+<html>
+    <head>
+      <title>cisco-duo-dag-python-flask-saml-example</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      {% block head %}{% endblock %}
+    </head>
+    <body>
+        <div>
+        	<a href="{{ url_for('login_blueprint.logout') }}">Logout</a>
+        </div>
+        <hr>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+				
+        {% block content %}{% endblock %}
+    </body>
+</html>
