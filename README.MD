@@ -81,7 +81,7 @@ Follow the Duo instructions to configure a generic SAML service provider.
 https://duo.com/docs/dag-generic
 
 * "Service Provider Name" is what will get displayed in the DAG Launcher (if you have that enabled).
-* "Entity ID" must EXACTLY match the SAML_ENTITY_ID you specific in config.py.
+* "Entity ID" must EXACTLY match the SAML_ENTITY_ID you specified in config.py.
 * "Assertion Consumer Service" should be https://yourappserver.com/saml/acs/
 * "Single Logout URL" should be left blank.
 * "Service Provider Login URL" should be https://yourappserver.com/saml/sso/
